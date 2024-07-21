@@ -20,9 +20,9 @@ More information about SEP-33 can be found here:
 </script>
 
 <header class="navbar bg-base-300">
-    <label for="drawer-toggle" class="btn-ghost drawer-button btn-square btn lg:hidden"
-        ><MenuIcon size="24" /></label
-    >
+    <label for="drawer-toggle" class="btn-ghost drawer-button btn-square btn lg:hidden">
+        <MenuIcon size="24" />
+    </label>
     <div class="flex-1">
         <a href="/dashboard" class="btn-ghost btn text-xl normal-case">Capy Credit</a>
     </div>

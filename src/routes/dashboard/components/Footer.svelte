@@ -15,12 +15,14 @@ can be found.
     <div class="grid-flow-col items-center">
         <ul class="menu menu-vertical md:menu-horizontal">
             <li>
-                <a href="https://www.stellar.org/terms-of-service" target="_blank"
-                    >Terms of Service</a
-                >
+                <a href="https://www.stellar.org/terms-of-service" target="_blank">
+                    Terms of Service
+                </a>
             </li>
             <li>
-                <a href="https://www.stellar.org/privacy-policy" target="_blank">Privacy Policy</a>
+                <a href="https://www.stellar.org/privacy-policy" target="_blank">
+                    Privacy Policy
+                </a>
             </li>
         </ul>
     </div>
