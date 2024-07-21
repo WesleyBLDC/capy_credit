@@ -92,12 +92,6 @@ that already exist on their account.
 </script>
 
 <h1>Assets</h1>
-<p>
-    The <code>/dashboard/assets</code> page will allow the user to manage the Stellar assets their account
-    carries trustlines to. On this page, they can select from several pre-suggested or highly ranked
-    assets, or they could specify their own asset to trust using an asset code and issuer public key.
-    They can also remove trustlines that already exist on their account.
-</p>
 
 <h2>Add Trusted Assets</h2>
 <p>Add a trustline on your account, allowing you to hold the specified asset.</p>

@@ -226,11 +226,6 @@ features have been implemented:
 </script>
 
 <h1>Send a Payment</h1>
-<p>
-    The <code>/dashboard/send</code> page allows the user to send payments to other Stellar addresses.
-    They can select from a dropdown containing their contact list names, or they could enter their own
-    "Other..." public key.
-</p>
 <p>Please complete the fields below to send a payment on the Stellar network.</p>
 
 <!-- Destination -->

@@ -28,11 +28,6 @@ the main `/dashboard` page.
 </script>
 
 <h1>Contacts</h1>
-<p>
-    The <code>/dashboard/contacts</code> page will allow the user to collect and manage a list of contact
-    entries that stores the contact's name and Stellar address. The contact can also be flagged/unflagged
-    as a "favorite" contact to be displayed on the main `/dashboard` page.
-</p>
 
 <h3>All contacts</h3>
 
@@ -88,7 +83,7 @@ the main `/dashboard` page.
                     id="addContactButton"
                     name="addContactButton"
                     type="submit"
-                    class="btn-success btn-sm btn-square btn"
+                    class="btn-success btn-square btn-sm btn"
                 >
                     <UserPlusIcon size="16" />
                 </button>
@@ -129,7 +124,7 @@ the main `/dashboard` page.
                         on:click={() => contacts.remove(contact.id)}
                         id={`removeContact${contact.id}`}
                         name={`removeContact${contact.id}`}
-                        class="btn-error btn-sm btn-square btn"
+                        class="btn-error btn-square btn-sm btn"
                     >
                         <Trash2Icon size="16" />
                     </button>
