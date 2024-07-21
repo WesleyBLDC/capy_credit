@@ -8,7 +8,7 @@ The `CreditScore` component displays the user's credit score based on the count 
     import { page } from '$app/stores'
 
     function calculateCreditScore(data) {
-        let score = 300 // Base score
+        let score = 400 // Base score
 
         // Find USDC balance
         const usdcBalance = data.balances.find(
@@ -18,11 +18,11 @@ The `CreditScore` component displays the user's credit score based on the count 
         // Currency Balance (only check USDC)
         if (usdcBalance) {
             const balanceAmount = parseFloat(usdcBalance.balance)
-            if (balanceAmount > 10000) {
+            if (balanceAmount > 80) {
                 score += 100
-            } else if (balanceAmount > 5000) {
+            } else if (balanceAmount > 20) {
                 score += 50
-            } else if (balanceAmount > 1) {
+            } else if (balanceAmount > 10) {
                 score += 25
             }
         }
@@ -34,11 +34,11 @@ The `CreditScore` component displays the user's credit score based on the count 
         const numTransfers = usdcPayments.length
 
         // Number of Transfers
-        if (numTransfers > 5) {
+        if (numTransfers > 15) {
             score += 100
-        } else if (numTransfers > 2) {
+        } else if (numTransfers > 10) {
             score += 50
-        } else if (numTransfers > 0) {
+        } else if (numTransfers > 5) {
             score += 25
         }
 
@@ -47,9 +47,9 @@ The `CreditScore` component displays the user's credit score based on the count 
             (sum, payment) => sum + parseFloat(payment.amount),
             0
         )
-        if (totalTransferAmount > 10000) {
+        if (totalTransferAmount > 100) {
             score += 100
-        } else if (totalTransferAmount > 5000) {
+        } else if (totalTransferAmount > 50) {
             score += 50
         } else if (totalTransferAmount > 10) {
             score += 25
@@ -62,9 +62,9 @@ The `CreditScore` component displays the user's credit score based on the count 
         }, new Date())
 
         const accountAgeInDays = (new Date() - earliestPayment) / (1000 * 60 * 60 * 24)
-        if (accountAgeInDays > 5 * 365) {
+        if (accountAgeInDays > 2 * 365) {
             score += 50
-        } else if (accountAgeInDays > 2 * 365) {
+        } else if (accountAgeInDays > 1 * 365) {
             score += 25
         }
 
